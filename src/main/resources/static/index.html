@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+Hello
+<a href="/hello">hello</a>
+</body>
+<script>
+    let btns = document.querySelectorAll('#button.style-scope > yt-icon.style-scope.ytd-menu-renderer');
+    //get three buttons
+    let itemCount = 1;
+    //for counting
+
+    setInterval(function(){
+        btns[itemCount].click();
+        let removeBtn = document.querySelectorAll('#items > ytd-menu-service-item-renderer:nth-child(3) > tp-yt-paper-item')[0]
+        removeBtn.click();
+        //remove at list
+        itemCount+=1
+    }, 1000);
+</script>
+</html>
